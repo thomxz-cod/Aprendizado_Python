@@ -1,4 +1,4 @@
-print("\tSistema Iniciado\n")
+print(f"\tSistema Iniciando ...\n")
 
 curso = "Desenvolvimento de Sistema"
 print(f"Curso = {curso} com python!")
