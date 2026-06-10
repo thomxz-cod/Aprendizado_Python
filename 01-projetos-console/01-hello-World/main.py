@@ -8,4 +8,3 @@ bloco de comentario ( docstring )
 Usado para comentar bloco de codigos maiores dentro das aspas duplas ""
 
 """
-
