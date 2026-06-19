@@ -2,13 +2,11 @@
 # variável 
 
 #EXEMPLO
-# nome = input("Qual e o seu nome?\n")
-# idade = int(input("Quantos anos vc tem?\n"))
-
-# print(f"nome resgistrado como {nome}")
-# print(f"Idade registrada com {idade} anos")
-
-# print(type(idade))
+nome = input("Qual e o seu nome?\n")
+idade = int(input("Quantos anos vc tem?\n"))
+print(f"nome resgistrado como {nome}")
+print(f"Idade registrada com {idade} anos")
+print(type(idade))
 
 # atribuição multipla 
 
