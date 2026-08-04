@@ -13,7 +13,7 @@ def saudar_pessoas(nome, curso):
 saudar_pessoas('TOIN', 'python')
 
 # parametro com valor padrao
-def potenia(base, expoente=2):
+def potenia(base, expoente=2):  # Ja existe uma função nativa do python: pow(base, expoente)
     return base ** expoente
 
 print(potenia(5))
