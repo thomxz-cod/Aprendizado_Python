@@ -5,7 +5,7 @@ cardapio = {
     'Ice':{ 'categoria' : 'Bebes' , 'preco' :   16.0 }
 }
 
-
+###################################################################################
 
 def exibirOpcoes():   #  exibe todas as opções do cardapio
     print("\n\tCardapio Completo\n\n===Comes===")
@@ -21,7 +21,7 @@ def exibirOpcoes():   #  exibe todas as opções do cardapio
         if dados['categoria'] != 'Comes' and dados['categoria'] != 'Bebes':
             print(f"{opcao:10} | R$ {dados['preco']:-8}")
             
-
+###################################################################################
 
 def buscarOpcao():    # encontra uma opção expecifica do cardapio
     nome = input("\nDigite o nome do prato: ")
@@ -34,7 +34,7 @@ def buscarOpcao():    # encontra uma opção expecifica do cardapio
     #     if nome == opcao.lower():
     #         print(f"\n{opcao:10} | R$ {dados['preco']:-8}")
 
-
+###################################################################################
 
 def adicionarOpcao():   # adiciona uma nova opção no cardapio
     nome = input("\nDigite o nome da nova opção: ")
@@ -42,7 +42,7 @@ def adicionarOpcao():   # adiciona uma nova opção no cardapio
     preco = float(input("Preço: "))
     cardapio.update({nome:{'categoria':categoria, 'preco':preco}})
 
-
+###################################################################################
 
 def atualizarOpcao():   # Atualiza uma opção no cardapio
     nome = input("\nDigite o nome da opção que deseja atualizar: ")
@@ -54,7 +54,7 @@ def atualizarOpcao():   # Atualiza uma opção no cardapio
     else:
         print("Produto não encontrado! ")
 
-
+###################################################################################
 
 def deletarOpcao(): # Deleta opção
     nome = input("\nDigite o nome da opção que deseja deletar: ")
