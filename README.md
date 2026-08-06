@@ -1,2 +1,2 @@
-# Aprendizado_Python
+# Python
 Python do inicio
