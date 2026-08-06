@@ -41,6 +41,7 @@ def adicionarOpcao():   # adiciona uma nova opção no cardapio
     categoria = input("Categoria: ")
     preco = float(input("Preço: "))
     cardapio.update({nome:{'categoria':categoria, 'preco':preco}})
+    print("\nOpção adicionado!!")
 
 ###################################################################################
 
@@ -51,6 +52,7 @@ def atualizarOpcao():   # Atualiza uma opção no cardapio
         categoria = input("Categoria: ")
         preco = float(input("Preço: "))
         cardapio.update({nome:{'categoria':categoria, 'preco':preco}})
+        print("\nOpção atualizada!!")
     else:
         print("Produto não encontrado! ")
 
@@ -61,6 +63,7 @@ def deletarOpcao(): # Deleta opção
     confirmacao = cardapio.get(nome)
     if confirmacao:
         del cardapio[nome]
+        print("\nOpção deletada!!")
     else:
         print("\nOpção não encontrada")
     
