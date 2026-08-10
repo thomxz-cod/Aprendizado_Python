@@ -3,11 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tela de Login do Sistema</title>
     <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-    
+    <section id="body">
+        <header>
+            <h1>Tela de <i>Login</i> do Sistema</h1>
+        </header>
+        
+        <main>
+            <section id="form">
+                <h2>Entrar no Sistema</h2>
+
+                <form id="form-login" action="#" method="post" novalidate>
+                    <fieldset>
+                        <legend><i>Login</i></legend>
+
+                        <div class="campo">
+                            <label for="email"><i>Email</i></label>
+                            <input type="email" id="email" name="email" placeholder="Ex: carlos@email.com" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="password"><i>Senha</i></label>
+                            <input type="password" id="password" name="password" required placeholder="*******" minlength="10">
+                        </div>
+
+                        <div class="campo">
+                            <label for="checkbox">Lembrar de <i>mim</i></label>
+                            <input type="checkbox" name="checkbox" id="checkbox">
+                        </div>
+                        <p>Esqueci minha <a href="pages/page.html">senha</a></p>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+    </section>
     
     <script src="scripts/script.js"></script>
 </body>

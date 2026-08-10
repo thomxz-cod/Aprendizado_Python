@@ -1,0 +1,36 @@
+/* *{
+    padding: 0%;
+    margin: 0%;
+} */
+
+@font-face {
+  font-family: 'Singsong';
+  src: url('../fonts/singsong/Singsong.otf') format('opentype');
+}
+
+body{
+    font-family: 'Singsong', sans-serif;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    align-items: center;
+}
+nav a{
+    color: rgb(224, 33, 33);
+}
+
+#form-cadastro, #campo, fieldset{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+fieldset legend{
+    color: rgb(224, 33, 33);
+}
+
+
