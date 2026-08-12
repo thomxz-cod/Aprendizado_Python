@@ -1,0 +1,1 @@
+CRUD completo, autenticação JWT, upload, docs Swagger
