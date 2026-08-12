@@ -1,0 +1,47 @@
+/* 1. Configurações Gerais e Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 2. Estilo do Corpo da Página (Tema Gamer Dark) */
+body {
+    background-color: #0d1117; /* Fundo azul-escuro quase preto */
+    color: #c9d1d9;           /* Texto claro para dar contraste */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* 3. Título Principal */
+h1 {
+    font-size: 2.5rem;
+    color: #00f2fe; /* Azul neon brilhante */
+    text-shadow: 0 0 10px rgba(0, 242, 254, 0.5); /* Efeito de brilho */
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+/* 4. Texto Informativo */
+p {
+    font-size: 1.1rem;
+    color: #8b949e; /* Texto secundário cinza fosco */
+    background: #161b22; /* Fundo do card de aviso */
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: 1px solid #30363d;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    line-height: 1.5;
+}
+
+/* 5. Destaque para a palavra 'console' */
+p::before {
+    content: "💡 ";
+}
