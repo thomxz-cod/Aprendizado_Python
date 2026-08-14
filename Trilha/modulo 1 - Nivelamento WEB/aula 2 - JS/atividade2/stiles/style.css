@@ -1,0 +1,116 @@
+/* Configurações Globais e Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+    color: #1e293b;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Container Principal (Card) */
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 480px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+}
+
+/* Títulos */
+h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #0f172a;
+    text-align: center;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #f1f5f9;
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #0f172a;
+    margin-top: 28px;
+    margin-bottom: 16px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #f1f5f9;
+}
+
+/* Linhas de Informação (Tags P) */
+.row-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8fafc;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.2s ease;
+}
+
+.row-info:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.row-info strong {
+    font-weight: 500;
+    color: #475569;
+    font-size: 0.95rem;
+}
+
+/* Embelezamento dos Outputs (Tags Span) */
+.row-info span {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #2563eb;
+    background-color: #eff6ff;
+    padding: 4px 10px;
+    border-radius: 6px;
+    min-width: 45px;
+    text-align: center;
+}
+
+/* Destaque para a linha do Total da Compra */
+.total-row {
+    background-color: #eff6ff;
+    border-color: #bfdbfe;
+}
+
+.total-row strong {
+    color: #1e40af;
+    font-weight: 600;
+}
+
+.total-row span {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+/* Estilização Customizada para a Seção de Benefícios */
+.benefit-row {
+    background-color: #f0fdf4;
+    border-color: #bbf7d0;
+}
+
+.benefit-row strong {
+    color: #166534;
+}
+
+.benefit-row span {
+    background-color: #dcfce7;
+    color: #16a34a;
+}
