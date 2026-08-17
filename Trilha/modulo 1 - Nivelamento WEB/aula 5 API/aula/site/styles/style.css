@@ -1,0 +1,119 @@
+:root {
+    --bg-color: #faf6f0;
+    --text-main: #2c3e50;
+    --text-muted: #7f8c8d;
+    --accent-color: #ff8a65;
+    --accent-hover: #ff7043;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    --radius: 16px;
+}
+
+/* Reset básico e configurações de box-sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilização do corpo da página com alinhamento central dinâmico */
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    text-align: center;
+}
+
+/* Título principal */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+/* Parágrafo de instrução */
+p {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 28px;
+}
+
+/* Estilização moderna e interativa do botão */
+#botao {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    border: none;
+    padding: 14px 32px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: var(--radius);
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(255, 138, 101, 0.3);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    margin-bottom: 24px;
+}
+
+#botao:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 112, 67, 0.4);
+}
+
+#botao:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(255, 112, 67, 0.2);
+}
+
+/* Quebra de linha ajustada para dar um espaçamento sutil */
+br {
+    display: none; /* Ocultamos o br para controlar o espaçamento puramente via margens do CSS */
+}
+
+/* Estilização da imagem com comportamento fluido e responsivo */
+#imagem {
+    max-width: 100%;
+    height: auto !important; /* Garante a proporção correta ao reduzir a tela */
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border: 6px solid #ffffff;
+    margin-top: 16px;
+    transition: transform 0.3s ease;
+}
+
+#imagem:hover {
+    transform: scale(1.02);
+}
+
+/* Rodapé fixado elegantemente na parte inferior */
+footer {
+    margin-top: auto;
+    padding-top: 48px;
+    width: 100%;
+}
+
+footer p {
+    font-size: 0.85rem;
+    color: #95a5a6;
+    margin-bottom: 0;
+}
+
+/* Regras de responsividade para dispositivos móveis */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    #botao {
+        width: 100%;
+        padding: 16px;
+    }
+}

@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0b0d10;
+    color: #e1e4ed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-image: radial-gradient(circle at 50% 20%, #171c28 0%, #0b0d10 70%);
+}
+
+h2 {
+    color: #8da4c4;
+    margin-bottom: 24px;
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #5a1827;
+    padding-bottom: 6px;
+}
+
+input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 16px;
+    background-color: #131722;
+    border: 1px solid #232a3b;
+    border-radius: 6px;
+    color: #e1e4ed;
+    font-size: 1rem;
+    margin-bottom: 12px;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #732235;
+    box-shadow: 0 0 0 2px rgba(115, 34, 53, 0.2);
+    outline: none;
+}
+
+button {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 16px;
+    background-color: #5a1827;
+    border: 1px solid #732235;
+    border-radius: 6px;
+    color: #f0c2c9;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-bottom: 24px;
+}
+
+button:hover {
+    background-color: #732235;
+    color: #ffffff;
+}
+
+#perfil {
+    width: 100%;
+    max-width: 400px;
+    background-color: #131722;
+    border: 1px solid #232a3b;
+    border-left: 4px solid #5a1827;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+#perfil img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #232a3b;
+}
+
+#perfil .info {
+    text-align: center;
+}
+
+#perfil h3 {
+    color: #ffffff;
+    font-size: 1.4rem;
+    margin-bottom: 4px;
+}
+
+#perfil p {
+    color: #8da4c4;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+}
+
+#perfil .stats {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #0b0d10;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #1f2636;
+}
+
+#perfil .stats div {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #8da4c4;
+}
+
+#perfil .stats span {
+    display: block;
+    color: #f0c2c9;
+    font-weight: bold;
+    font-size: 1rem;
+}
