@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Aula: Remoção e Delegação de Eventos</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <h1>Exemplos: Remoção de Elementos e Delegação de Eventos</h1>
+
+  <!-- Seção 1: Duplo clique -->
+  <div class="section">
+    <h2>1 Duplo Clique</h2>
+    <p class="info">Clique duas vezes neste parágrafo para disparar um evento.</p>
+    <p id="duploClique">Texto para duplo clique</p>
+  </div>
+
+  <!-- Seção 2: Remoção de elementos -->
+  <div class="section">
+    <h2>2 Remoção de Elementos</h2>
+    <ul id="lista">
+      <li id="item1">Item 1</li>
+      <li id="item2">Item 2</li>
+      <li id="item3">Item 3</li>
+    </ul>
+    <button id="btnRemoverItem2">Remover Item 2</button>
+  </div>
+
+  <!-- Seção 3: Delegação de eventos -->
+  <div class="section">
+    <h2>3 Delegação de Eventos</h2>
+    <p class="info">Clique em qualquer tarefa para removê-la. Novas tarefas podem ser adicionadas com o botão abaixo.</p>
+    <button id="btnAdicionarTarefa">Adicionar Tarefa</button>
+    <ul id="tarefas">
+      <li class="tarefa">Tarefa 1</li>
+      <li class="tarefa">Tarefa 2</li>
+      <li class="tarefa">Tarefa 3</li>
+    </ul>
+  </div>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>

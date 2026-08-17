@@ -1,0 +1,190 @@
+/* ==========================================================================
+   Variáveis Globais e Temas
+   ========================================================================== */
+:root {
+  /* Cores principais */
+  --primary: #4f46e5;         /* Azul/Roxo moderno para elementos principais */
+  --primary-hover: #4338ca;   /* Tom mais escuro para o hover dos botões */
+  --secondary: #64748b;       /* Cinza azulado para ações secundárias */
+  --secondary-hover: #475569; /* Tom mais escuro para hover secundário */
+  
+  /* Cores de feedback e estados */
+  --bg-main: #f8fafc;         /* Fundo da página ultra claro */
+  --bg-card: #ffffff;         /* Fundo dos blocos de conteúdo */
+  --text-main: #1e293b;       /* Cor do texto principal */
+  --text-muted: #627183;      /* Cor do texto secundário/informativo */
+  --danger-bg: #fee2e2;       /* Fundo vermelho claro para remoção */
+  --danger-text: #ef4444;     /* Texto vermelho para indicação de perigo */
+  
+  /* Estrutura e animações */
+  --border-radius: 8px;
+  --transition: all 0.2s ease-in-out;
+}
+
+/* ==========================================================================
+   Reset e Configurações Base
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Título Principal */
+h1 {
+  font-size: 1.85rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: var(--primary);
+}
+
+/* ==========================================================================
+   Componentes Reutilizáveis (.section, .info, buttons)
+   ========================================================================== */
+.section {
+  background-color: var(--bg-card);
+  padding: 1.75rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  margin-bottom: 2rem;
+  border: 1px solid #e2e8f0;
+}
+
+.section h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--text-main);
+  border-bottom: 2px solid #f1f5f9;
+  padding-bottom: 0.5rem;
+}
+
+.info {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+}
+
+/* Botões */
+button {
+  background-color: var(--primary);
+  color: #ffffff;
+  border: none;
+  padding: 0.65rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: var(--primary-hover);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Estilos gerais de listas */
+ul {
+  list-style: none;
+  margin-bottom: 1.25rem;
+}
+
+li {
+  background-color: #f1f5f9;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: var(--border-radius);
+  font-size: 0.95rem;
+  transition: var(--transition);
+}
+
+/* ==========================================================================
+   Customizações por Seção
+   ========================================================================== */
+
+/* Seção 1: Duplo Clique */
+#duploClique {
+  background-color: #f8fafc;
+  border: 2px dashed #cbd5e1;
+  padding: 1.25rem;
+  text-align: center;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none; /* Impede a seleção acidental do texto ao clicar rápido */
+  transition: var(--transition);
+}
+
+#duploClique:hover {
+  background-color: #f1f5f9;
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+/* Seção 2: Remoção de Elementos */
+#lista li {
+  border-left: 4px solid var(--secondary);
+}
+
+#btnRemoverItem2 {
+  background-color: var(--secondary);
+}
+
+#btnRemoverItem2:hover {
+  background-color: var(--secondary-hover);
+}
+
+/* Seção 3: Delegação de Eventos */
+#btnAdicionarTarefa {
+  margin-bottom: 1.25rem;
+  width: 100%; /* Facilita o clique em dispositivos móveis */
+}
+
+#tarefas li {
+  border-left: 4px solid var(--primary);
+  cursor: pointer;
+  position: relative;
+}
+
+/* Efeito visual simulando que o item pode ser deletado via clique */
+#tarefas li:hover {
+  background-color: var(--danger-bg);
+  border-left-color: var(--danger-text);
+  color: var(--danger-text);
+}
+
+#tarefas li:hover::after {
+  content: 'Remover ✕';
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+/* ==========================================================================
+   Responsividade (Media Queries)
+   ========================================================================== */
+@media (min-width: 640px) {
+  #btnAdicionarTarefa {
+    width: auto; /* Retorna ao tamanho padrão em telas maiores */
+  }
+}
