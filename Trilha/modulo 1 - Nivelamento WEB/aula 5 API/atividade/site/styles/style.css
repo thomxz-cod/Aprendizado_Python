@@ -19,7 +19,6 @@ body {
 
 h2 {
     color: #8da4c4;
-    margin-bottom: 24px;
     font-size: 1.8rem;
     letter-spacing: 0.5px;
     border-bottom: 2px solid #5a1827;
@@ -92,7 +91,7 @@ button:hover {
 }
 
 #perfil h3 {
-    color: #ffffff;
+    color: #8da4c4;
     font-size: 1.4rem;
     margin-bottom: 4px;
 }
