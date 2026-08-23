@@ -31,10 +31,9 @@ O `.gitignore` é um arquivo de configuração que diz quais pastas ou arquivos 
 
 ![alt text](imgs/image.png)
 
-## **ALERTA**
-<pre style="white-space: pre-wrap; background: #161b22; padding: 16px; border-radius: 6px;">
-Além de haver apenas um arquivo .gitignore por repositório, ele deve estar obrigatoriamente na raiz do diretório (onde fica a pasta oculta .git).
-</pre>
+> [!WARNING]
+> Além de haver apenas um arquivo `.gitignore` por repositório, ele deve estar obrigatoriamente na raiz do diretório (onde fica a pasta oculta `.git`).
+
 <br>
 
 # Fluxo
