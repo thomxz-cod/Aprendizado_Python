@@ -5,6 +5,7 @@ import json                     # importa a biblioteca nativa do python para man
 
 with open("users_db.json", "r", encoding="utf-8") as file:
     users_db = json.load(file)
+
 """
 abre o .json em forma de leitura(r = read) e coloca em um dicionario python
 encoding="utf-8"                # garante que ate caracteres especiais serão lidos
@@ -31,16 +32,26 @@ def status():
 def list_users():
     return users_db
 
-@app.get("/users/search_user_name/{user_name}")
-def list_user_name(name: str = ''):
+@app.get("/users/search_user_name/{name}")   # o nome do parametro deve ser igual a variavel de parametro da função
+def list_user_name(name: str):
     if not name:
         return users_db
     return [user for user in users_db if name.lower() in user['name'].lower()]
 
-@app.get("/users/search_user_id/{user_id}")    # retorna o usuario com o ID que o cliente passou, utilize chaves{} para parametros
+@app.get("/users/search_user_id/{id}")    # retorna o usuario com o ID que o cliente passou, utilize chaves{} para parametros
 def list_user_id(id: int):      # id: int diz que a variavel id é um numero inteiro
     for user in users_db:
         if id == user["id"]:
             return user
     return {"Error":"User não encontrado! T-T"}
 
+@app.get("/users/search_user_skills/{skill}")
+def list_users_skills(skill: str):
+    users = []
+    for user in users_db:
+        for s in user['skills']:
+            if skill.lower() == s.lower():
+                users.append(user)
+    if len(users) != 0:
+        return users   
+    return {"Error":"Nenhum user com essa Skill! T-T"}

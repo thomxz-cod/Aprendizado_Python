@@ -4,69 +4,69 @@
     "name": "Thom",
     "idade": 25,
     "ativo": true,
-    "habilidades": ["Java", "Python", "SQL"]
+    "skills": ["Nginx", "Python", "MySQL", "JS"]
   },
   {
     "id": 2,
     "name": "Evy",
     "idade": 30,
     "ativo": true,
-    "habilidades": ["JavaScript", "TypeScript", "Node.js"]
+    "skills": ["JS", "CSS", "Nginx"]
   },
   {
     "id": 3,
     "name": "Bebezin",
     "idade": 22,
-    "ativo": false,
-    "habilidades": ["HTML", "CSS", "React"]
+    "ativo": true,
+    "skills": ["HTML", "CSS", "JS"]
   },
   {
     "id": 4,
     "name": "Vitin",
     "idade": 28,
     "ativo": true,
-    "habilidades": ["Python", "Django", "Flask"]
+    "skills": ["Python", "MySQL", "Nginx"]
   },
   {
     "id": 5,
     "name": "Felipe Farias",
     "idade": 35,
-    "ativo": true,
-    "habilidades": ["C#", ".NET", "SQL Server"]
+    "ativo": false,
+    "skills": ["HTML", "JS", "MySQL"]
   },
   {
     "id": 6,
     "name": "David Willian",
     "idade": 27,
     "ativo": false,
-    "habilidades": ["PHP", "Laravel", "MySQL"]
+    "skills": ["CSS", "Python", "MySQL"]
   },
   {
     "id": 7,
     "name": "Sarah",
     "idade": 24,
-    "ativo": true,
-    "habilidades": ["Go", "Docker", "Kubernetes"]
+    "ativo": false,
+    "skills": ["JS", "Python", "Nginx"]
   },
   {
     "id": 8,
     "name": "Deborah",
     "idade": 31,
-    "ativo": true,
-    "habilidades": ["Ruby", "Rails", "PostgreSQL"]
+    "ativo": false,
+    "skills": ["HTML", "CSS", "Nginx"]
   },
   {
     "id": 9,
     "name": "Beatriz",
     "idade": 29,
-    "ativo": false,
-    "habilidades": ["C++", "Embedded Systems", "Linux"]
+    "ativo": true,
+    "skills": ["JS", "MySQL", "Nginx"]
   },
   {
     "id": 10,
     "name": "Kesia",
     "idade": 26,
     "ativo": true,
-    "habilidades": ["Swift", "Kotlin", "Mobile Development"]
+    "skills": ["HTML", "CSS", "Python"]
   }
 ]
