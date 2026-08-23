@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Thom",
+    "idade": 25,
+    "ativo": true,
+    "habilidades": ["Java", "Python", "SQL"]
+  },
+  {
+    "id": 2,
+    "name": "Evy",
+    "idade": 30,
+    "ativo": true,
+    "habilidades": ["JavaScript", "TypeScript", "Node.js"]
+  },
+  {
+    "id": 3,
+    "name": "Bebezin",
+    "idade": 22,
+    "ativo": false,
+    "habilidades": ["HTML", "CSS", "React"]
+  },
+  {
+    "id": 4,
+    "name": "Vitin",
+    "idade": 28,
+    "ativo": true,
+    "habilidades": ["Python", "Django", "Flask"]
+  },
+  {
+    "id": 5,
+    "name": "Felipe Farias",
+    "idade": 35,
+    "ativo": true,
+    "habilidades": ["C#", ".NET", "SQL Server"]
+  },
+  {
+    "id": 6,
+    "name": "David Willian",
+    "idade": 27,
+    "ativo": false,
+    "habilidades": ["PHP", "Laravel", "MySQL"]
+  },
+  {
+    "id": 7,
+    "name": "Sarah",
+    "idade": 24,
+    "ativo": true,
+    "habilidades": ["Go", "Docker", "Kubernetes"]
+  },
+  {
+    "id": 8,
+    "name": "Deborah",
+    "idade": 31,
+    "ativo": true,
+    "habilidades": ["Ruby", "Rails", "PostgreSQL"]
+  },
+  {
+    "id": 9,
+    "name": "Beatriz",
+    "idade": 29,
+    "ativo": false,
+    "habilidades": ["C++", "Embedded Systems", "Linux"]
+  },
+  {
+    "id": 10,
+    "name": "Kesia",
+    "idade": 26,
+    "ativo": true,
+    "habilidades": ["Swift", "Kotlin", "Mobile Development"]
+  }
+]
