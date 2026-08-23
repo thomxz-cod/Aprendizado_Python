@@ -1,60 +1,59 @@
 # Ambiente Virtual:
 ```bash
-# so crie na msm pasta que vai ter a aplicação
-python -m venv venv             # criar ambiente virtual
-source venv/Scripts/active      # ativar ambiente virtual
+# Só crie na mesma pasta onde ficará a aplicação
+python -m venv venv                     # Criar ambiente virtual
+source venv/Scripts/activate            # Ativar ambiente virtual (Git Bash / Linux)
+# venv\Scripts\activate                 # Ativar ambiente virtual (Prompt de Comando CMD)
 
-deactive                        # desativar ambiente virtual
+deactivate                              # Desativar ambiente virtual
 ```
 <br>
 
-# Depedencias:
+# Dependências:
 ```bash
-        # Depois de entrar no ambiente virtual
+# Depois de entrar no ambiente virtual
 
-python.exe -m pip install --upgrade pip # upgrade no pip
+python.exe -m pip install --upgrade pip # Atualizar o pip
 
-pip install fastapi uvicorn     # instalar as depedencias para o desevolvimento
+pip install fastapi uvicorn     # Instalar as dependências para o desenvolvimento
 
-pip list                        # lista todos as bibliotecas instaladas
+pip list                        # Listar todas as bibliotecas instaladas
 
-pip freeze > requirements.txt   # salva as verções especificas das depedencias na file requirements.txt
+pip freeze > requirements.txt   # Salvar as versões específicas das dependências no arquivo requirements.txt
 
-pip install -r requirements.txt # submete o ambiente venv a aqls configs
+pip install -r requirements.txt # Instala as dependências listadas no arquivo requirements.txt
 ```
 <br>
 
 # GitIgnore
 
-O .gitignore é um arquivo para de configuração que diz quais pastas ou arquivos não devem ser enviados para o repositorio na nuvem, deve ser uma lista em que cada file ou directory fica em uma linha propria.
+O `.gitignore` é um arquivo de configuração que diz quais pastas ou arquivos não devem ser enviados para o repositório na nuvem. Deve ser estruturado como uma lista em que cada arquivo ou diretório fica em sua própria linha.
 
 ![alt text](imgs/image.png)
 
 ## **ALERTA**
-```bash
-alem de ser apenas um file .gitignore por repositorio, o file deve estar 'exclusivamete' na raiz do diretorio (onde fica o diretorio .git)
-```
+<pre style="white-space: pre-wrap; background: #161b22; padding: 16px; border-radius: 6px;">
+Além de haver apenas um arquivo .gitignore por repositório, ele deve estar obrigatoriamente na raiz do diretório (onde fica a pasta oculta .git).
+</pre>
 <br>
 
 # Fluxo
-depois do projeto ja estar no repositorio na nuvem:
+Depois do projeto já estar no repositório na nuvem:
 ```bash
-
-git clone url_repository                # clonar repositorio
-cd repository                           # entrar na pasta
-python -m venv venv                     # criar ambiente pra aplicação
-source venv/Scrpit/active               # ativar ambiente virtual
-pip install -r requirements.txt         # instalar depedencias da aplicação
-
+git clone url_repository                # Clonar repositório
+cd repository                           # Entrar na pasta do projeto
+python -m venv venv                     # Criar ambiente para a aplicação
+source venv/Scripts/activate            # Ativar ambiente virtual
+pip install -r requirements.txt         # Instalar dependências da aplicação
 ```
 <br>
 
 # Uvicorn
-Um servidor Web para rodar junto com o *FastAPI*, para ativar:
+Um servidor Web para rodar junto com o *FastAPI*. Para iniciar:
 ```bash
-# Sempre rode depois de ativar o venv e baixar as depedencias, deixe rodando em segundo plano para testar a API
-# tbm sempre rode na msm pasta que o arquivo main.py esta
+# Sempre execute depois de ativar o venv e instalar as dependências.
+# Deixe rodando em segundo plano para testar a API.
+# Também execute sempre na mesma pasta onde o arquivo main.py está localizado.
 
-uvicorn main:app --reload               # :app é o nome da API que criamos no file main.py da aula 1
-
+uvicorn main:app --reload               # :app é o nome da instância da API criada no arquivo main.py
 ```
